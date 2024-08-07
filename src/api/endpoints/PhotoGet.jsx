@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import URL from './URL';
 
 const PhotoGet = () => {
   const [query, setQuery] = useState('');
@@ -9,7 +10,7 @@ const PhotoGet = () => {
     fetch(`${URL}/api/photo/${query}`)
       .then((r) => {
         console.log(r);
-        r.json;
+        return r.json();
       })
       .then((json) => {
         console.log(json);
@@ -23,7 +24,7 @@ const PhotoGet = () => {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="?_total=1&_page=1&_user=6"
+        placeholder=""
         value={query}
         onChange={handleGetQuery}
       />

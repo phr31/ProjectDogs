@@ -27,7 +27,7 @@ const PhotoPost = () => {
     })
       .then((r) => {
         console.log(r);
-        r.json;
+        return r.json();
       })
       .then((json) => {
         console.log(json);

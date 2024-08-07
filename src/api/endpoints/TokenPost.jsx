@@ -20,7 +20,7 @@ const TokenPost = () => {
     })
       .then((r) => {
         console.log(r);
-        r.json;
+        return r.json();
       })
       .then((json) => {
         console.log(json);
@@ -34,9 +34,7 @@ const TokenPost = () => {
   function handleGetPassword({ target }) {
     setPassword(target.value);
   }
-  function handleGetToken({ target }) {
-    setToken(target.value);
-  }
+
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -52,7 +50,7 @@ const TokenPost = () => {
         onChange={handleGetPassword}
       />
       <button>Enviar</button>
-      <p style={{wordBreak:'break-all'}}>{token}</p>
+      <p style={{ wordBreak: 'break-all' }}>{token}</p>
     </form>
   );
 };
