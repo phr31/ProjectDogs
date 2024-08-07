@@ -1,0 +1,39 @@
+.button {
+  font-size: 1rem;
+  font-family: var(--type-first);
+  cursor: pointer;
+  border: none;
+  min-width: 8rem;
+  border-radius: 0.4rem;
+  background: #fb1;
+  color: #764701;
+  padding: 0.8rem 1.2rem;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  display: inline-block;
+  position: relative;
+}
+
+/*--elemento a ser mostrado pelo hover--*/
+.button:focus:after,
+.button:after {
+  content: '»';
+  color: #764701;
+  font-size: 20px;
+  position: absolute;
+  opacity: 0;
+  top: 0.6rem;
+  right: -20px;
+  transition: 0.5s;
+  
+}
+/*-- redução de tamanho no button pelo hover--*/
+.button:focus,
+.button:hover {
+  padding-right: 45px;
+  padding-left: 18px;
+ }
+.button:hover:after {
+  opacity: 1;
+  right: 18px;
+}

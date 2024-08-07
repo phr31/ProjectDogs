@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './css/Header.module.css';
 import { Link } from 'react-router-dom';
-import  Dogs from '../../Assets/dogs.svg?react';
+import  Dogs from '../Assets/dogs.svg?react';
 
 const Header = () => {
   return (
