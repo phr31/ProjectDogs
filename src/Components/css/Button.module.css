@@ -13,9 +13,13 @@
   display: inline-block;
   position: relative;
 }
+.button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+  transition: 0.3s;
+}
 
 /*--elemento a ser mostrado pelo hover--*/
-.button:focus:after,
 .button:after {
   content: '»';
   color: #764701;
@@ -25,15 +29,16 @@
   top: 0.6rem;
   right: -20px;
   transition: 0.5s;
-  
 }
 /*-- redução de tamanho no button pelo hover--*/
 .button:focus,
 .button:hover {
   padding-right: 45px;
   padding-left: 18px;
- }
+}
 .button:hover:after {
   opacity: 1;
   right: 18px;
 }
+
+
