@@ -50,6 +50,10 @@ a {
   margin: 0 auto;
 }
 
+.mainContainer{
+  margin: 4rem 0 0 0;
+}
+
 .title {
   font-family: var(--type-second);
   line-height: 1;
