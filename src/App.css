@@ -50,8 +50,8 @@ a {
   margin: 0 auto;
 }
 
-.mainContainer{
-  margin: 4rem 0 0 0;
+.mainContainer {
+  margin-top: 2rem;
 }
 
 .title {
@@ -80,7 +80,11 @@ a {
   font-size: 0.875rem;
   margin: 1rem 0;
 }
-
+.avisoFeed {
+  text-align: center;
+  padding: 2rem 0 4rem 0;
+  color: #888;
+}
 .animeLeft {
   transform: translateX(-20px);
   opacity: 0;

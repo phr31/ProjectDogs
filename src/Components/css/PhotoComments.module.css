@@ -1,0 +1,17 @@
+.comments {
+  overflow-y: auto;
+  word-break: break-word;
+  padding: 0 2rem;
+}
+.single.comments {
+  padding: 0rem;
+}
+.comments li {
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+@media (max-width: 64rem) {
+  .single.comments {
+    padding: 0rem 0rem 0rem 2rem;
+  }
+}
