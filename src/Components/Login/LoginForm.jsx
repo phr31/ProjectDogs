@@ -6,9 +6,8 @@ import useForm from '../../Hooks/useForm';
 import { UserContext } from '../../UserContext';
 import Error from '../Helper/Error';
 import styles from '../css/LoginForm.module.css';
-import stylesBtm from '../css/Button.module.css'
+import stylesBtm from '../css/Button.module.css';
 import Head from '../Helper/Head';
-
 
 const LoginForm = () => {
   const username = useForm();
@@ -35,7 +34,7 @@ const LoginForm = () => {
         ) : (
           <Button name="Entrar" />
         )}
-        {error && <Error error={error} />}
+        {error && <Error error={error && 'Dados Incorretos!'} />}
       </form>
       <Link className={styles.perdeu} to="/login/perdeu">
         Esqueceu a Senha?

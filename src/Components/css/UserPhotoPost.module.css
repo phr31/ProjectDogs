@@ -4,16 +4,21 @@
   gap: 2rem;
   margin: 0 0 2rem 0;
 }
+@media (max-width: 40rem) {
+  .photoPost {
+    grid-template-columns: 1fr;
+  }
+}
 
-.file{
+.file {
   margin: 0 0 1rem 0;
 }
-.preview{
+.preview {
   border-radius: 1rem;
   background-size: cover;
   background-position: center center;
 }
-.preview::after{
+.preview::after {
   content: '';
   display: block;
   height: 0px;
